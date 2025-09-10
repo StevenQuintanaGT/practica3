@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANTE S.A.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/Restaurante.jpeg" alt="Logo Restaurante">
+                <span>RESTAURANTE S.A.</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#mision">Misión</a></li>
+                <li><a href="#vision">Visión</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Bienvenido a RESTAURANTE S.A.</h1>
+        <h2>Desayunos, Almuerzos y Cenas para todos los gustos</h2>
+        <div class="hero-buttons">
+            <a href="#servicios" class="btn">Ver Servicios</a>
+            <a href="#login" class="btn btn-secundario">Iniciar Sesión</a>
+        </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="tarjetas-servicios">
+            <div class="tarjeta">
+                <img src="img/desayunos.jpeg" alt="Desayunos">
+                <h3>Desayunos</h3>
+                <p>Comienza tu día con energía con nuestros deliciosos desayunos.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/almuerzos.jpg" alt="Almuerzos">
+                <h3>Almuerzos</h3>
+                <p>Variedad de platillos para tu almuerzo perfecto.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/hamburguesa.jpeg" alt="Cenas">
+                <h3>Cenas</h3>
+                <p>Disfruta de una cena especial en un ambiente acogedor.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/publicitaria.jpeg" alt="Eventos">
+                <h3>Eventos</h3>
+                <p>Organiza tus eventos con nosotros y vive una experiencia única.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mision-vision">
+        <div class="mision" id="mision">
+            <h2>Misión</h2>
+            <p>Brindar experiencias gastronómicas de calidad, con atención personalizada y ambiente familiar.</p>
+        </div>
+        <div class="vision" id="vision">
+            <h2>Visión</h2>
+            <p>Ser el restaurante preferido de la región, reconocido por su excelencia y compromiso social.</p>
+        </div>
+    </section>
+
+    <section class="equipo" id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <img src="img/equipo-restaurante.jpg" alt="Equipo Restaurante" class="img-equipo">
+        <p>Contamos con un equipo profesional y apasionado por la gastronomía.</p>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <div class="redes-sociales">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="pestana-horarios" id="pestanaHorarios">
+        <div class="pestana-tab" id="abrirPestana">
+            <i class="fas fa-clock"></i>
+            <span>Horarios</span>
+        </div>
+        <div class="pestana-contenido" id="contenidoPestana">
+            <h3>Horarios de Atención</h3>
+            <table>
+                <tr><td>Lunes a Viernes</td><td>7:00 - 22:00</td></tr>
+                <tr><td>Sábado</td><td>8:00 - 23:00</td></tr>
+                <tr><td>Domingo</td><td>8:00 - 21:00</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2025 RESTAURANTE S.A. | Todos los derechos reservados.</p>
+            <div class="footer-redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

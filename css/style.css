@@ -1,0 +1,339 @@
+/* style.css - Restaurante S.A. */
+/* Paleta azul y celeste */
+:root {
+    --color-principal: #1976d2; /* Azul principal */
+    --color-secundario: #e3f2fd; /* Celeste claro */
+    --color-acento: #00bcd4; /* Celeste acento */
+    --color-texto: #1a237e; /* Azul oscuro para texto */
+    --color-footer: #0d47a1; /* Azul footer */
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--color-secundario);
+    color: var(--color-texto);
+}
+header {
+    background: var(--color-principal);
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(25,118,210,0.08);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-acento);
+}
+.logo span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links li a:hover {
+    color: var(--color-acento);
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.hamburger span {
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+}
+.hero {
+    background: linear-gradient(rgba(25,118,210,0.7),rgba(0,188,212,0.3)), url('../img/Restaurante.jpeg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem 3rem 1rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.hero h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn {
+    background: var(--color-acento);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,188,212,0.10);
+}
+.btn:hover {
+    background: #0288d1;
+}
+.btn-secundario {
+    background: #fff;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+}
+.btn-secundario:hover {
+    background: var(--color-principal);
+    color: #fff;
+}
+.servicios {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+.servicios h2 {
+    margin-bottom: 2rem;
+    color: var(--color-principal);
+}
+.tarjetas-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.tarjeta {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(33,140,58,0.08);
+    padding: 1.5rem 1rem;
+    width: 230px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.tarjeta:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 4px 18px rgba(33,140,58,0.15);
+}
+.tarjeta img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.tarjeta h3 {
+    color: var(--color-acento);
+    margin-bottom: 0.5rem;
+}
+.mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 1rem;
+}
+.mision, .vision {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(33,140,58,0.07);
+    flex: 1 1 300px;
+    padding: 1.5rem;
+    min-width: 260px;
+}
+.mision h2, .vision h2 {
+    color: var(--color-principal);
+    margin-bottom: 0.7rem;
+}
+.equipo {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 700px;
+    padding: 1rem;
+}
+.img-equipo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    margin: 1rem 0;
+}
+.contacto {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(33,140,58,0.07);
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contacto input, .contacto textarea {
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.contacto textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2rem 0 1rem 0;
+}
+.redes-sociales a {
+    color: var(--color-principal);
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+.redes-sociales a:hover {
+    color: var(--color-acento);
+}
+footer {
+    background: var(--color-footer);
+    color: #fff;
+    padding: 1.2rem 0 0.5rem 0;
+    text-align: center;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+.footer-redes a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+.footer-redes a:hover {
+    color: var(--color-acento);
+}
+/* Pestaña Horarios */
+.pestana-horarios {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pestana-tab {
+    background: var(--color-principal);
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 18px 0 0 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(25,118,210,0.12);
+    transition: background 0.2s;
+}
+.pestana-tab:hover {
+    background: var(--color-acento);
+}
+.pestana-contenido {
+    background: #fff;
+    color: var(--color-texto);
+    border-radius: 18px 0 0 18px;
+    box-shadow: 0 2px 12px rgba(33,140,58,0.13);
+    padding: 1.2rem 1.5rem;
+    min-width: 220px;
+    margin-top: 0.5rem;
+    display: none;
+    animation: fadeIn 0.3s;
+}
+.pestana-contenido h3 {
+    color: var(--color-principal);
+    margin-bottom: 0.7rem;
+}
+.pestana-contenido table {
+    width: 100%;
+    font-size: 1rem;
+}
+.pestana-contenido td {
+    padding: 0.3rem 0.5rem;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@media (max-width: 900px) {
+    .tarjetas-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        background: var(--color-principal);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: none;
+        z-index: 100;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
